@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" />
+
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" />
+
+      <label for="name_and_lastname">Name and Lastname</label>
+      <input type="text" name="name_and_lastname" />
+
+      <label for="date_birth">Date of birth</label>
+      <input type="date" name="date_birth" />
+
+      <label for="phone_number">Telephone number</label>
+      <input type="number" name="phone_number" />
+
+      <label for="plan">Select the best plan for you</label>
+      <select name="plan" id="plan">
+        <option value="free">Free plan</option>
+        <optgroup label="Paid Plans">
+          <option value="plan_basic">Basic</option>
+          <option value="plan_medium">Medium</option>
+          <option value="plan_ultra">Ultra</option>
+        </optgroup>
+      </select>
+
+      <br />
+
+      <input type="checkbox" id="pro" name="pro" />
+      <label for="pro">Pro</label>
+
+      <label for="ccard_number">Credit card number</label>
+      <input type="number" name="ccard_number" />
+
+      <label for="cvc_number">CVC</label>
+      <input type="number" name="cvc_number" />
+
+      <label for="expiration_date">Expiration date</label>
+      <select name="expiration_date" id="expireMM">
+        <optgroup value="Month" label="Month">
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+        </optgroup>
+      </select>
+      <select name="expiration_date" id="expireYY">
+        <optgroup value="year" label="Year">
+          <option value="20">2020</option>
+          <option value="21">2021</option>
+          <option value="22">2022</option>
+          <option value="23">2023</option>
+        </optgroup>
+      </select>
+      <label for="billing_address">Billing address</label>
+      <input name="billing_address" />
+    </form>
+  </body>
+</html>
